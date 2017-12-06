@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <!-- <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button> -->
+    <block>
+      <!-- <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image> -->
+      <!-- <text class="userinfo-nickname">{{userInfo.nickName}}</text> -->
+      <view wx:for="{{images}}" wx:for-item="item" class="body">
+        <view class='title'>{{item.name}}</view>
+        <view class='image'>
+          <image src="{{item.src}}"></image>
+          <navigator url='{{"/pages/productDetall/product?name=" + item.name}}'>
+            <button  class='button'>预约试驾</button>
+          </navigator>
+        </view>
+      </view>
+      <!-- <image  src="../../static/c2.png"></image> -->
+      <!-- <image  src="../../static/c3.png"></image>
+      <image  src="../../static/c4.png"></image>
+      <image  src="../../static/c5.png"></image>
+      <image  src="../../static/c6.png"></image>
+      <image  src="../../static/c7.png"></image>
+      <image  src="../../static/c8.png"></image> -->
+    </block>
+    <view class="usermotto">
+      <text class="user-motto" bind:tap="tapHello" id="botton-text">{{motto}}</text>
+    </view>
+  </view>
+</view>

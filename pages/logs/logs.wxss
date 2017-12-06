@@ -1,0 +1,16 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.column {
+  width: 100%;
+  height: 320px;
+}
+.radar {
+  width: 100%;
+  height: 400px;
+}

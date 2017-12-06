@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/user",
+    "pages/home/home",
+    "pages/productDetall/product"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": "true",
+    "navigationBarBackgroundColor": "#66f",
+    "navigationBarTitleText": "汽车小程序"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#66f",
+    "backgroundColor": "#eef",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "企业主页",
+        "iconPath": "/static/1.png",
+        "selectedIconPath": "/static/2.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "浏览记录",
+        "iconPath": "/static/5.png",
+        "selectedIconPath": "/static/6.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "管理中心",
+        "iconPath": "/static/7.png",
+        "selectedIconPath": "/static/8.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "账户中心",
+        "iconPath": "/static/3.png",
+        "selectedIconPath": "/static/4.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}
